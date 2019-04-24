@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Your Attendance Assistant</string>
+    <string name="partial_sign_up_ins">You have to create a temporary account to temporarily use this app. You can make this account permanenet any time you want by signing up.</string>
+    <string name="i_agree">I agree with the terms and conditions .</string>
+    <string name="no_class">There is no existing class or group</string>
+    <string name="no_class_running">There is no running classes</string>
+    <string name="no_student">There are no students admitted in this class</string>
+    <string name="about_us">we are here</string>
+
+    <string-array name="homepage_label">
+
+        <item>Admission</item>
+        <item>All Students</item>
+        <item>Take Attendance</item>
+
+    </string-array>
+
+    <string-array name="days_of_week">
+
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+
+    </string-array>
+
+    <string-array name="months">
+
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+
+    </string-array>
+</resources>

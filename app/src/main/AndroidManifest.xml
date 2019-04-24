@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.courseproject_2200.badiuzzaman.yourattendanceassistant">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoadingScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstTime" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".PartialSignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".AdmissionActivity" />
+        <activity android:name=".CreateClassActivity" />
+        <activity android:name=".ViewStudentsActivity" />
+        <activity android:name=".TakeAttendanceActivity" />
+        <activity android:name=".CreateStudentActivity" />
+        <activity android:name=".StudentsActivity" />
+        <activity android:name=".StudentAttendanceActivity" />
+        <activity android:name=".StudentDetailsActivity" />
+        <activity android:name=".ClassDetailsActivity" />
+        <activity android:name=".AttendanceSheetActivity" />
+        <activity android:name=".AboutUsActivity"></activity>
+    </application>
+
+</manifest>

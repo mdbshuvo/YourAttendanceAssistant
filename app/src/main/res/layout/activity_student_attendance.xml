@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentAttendanceActivity"
+    android:background="@drawable/galaxy_background"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/search_student_attendance_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Enter a class name"
+        android:visibility="gone">
+
+
+    </SearchView>
+
+    <TextView
+        android:id="@+id/title_student_attendance_list"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Choose a Student"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="#b46c6c"
+        android:textStyle="bold"
+        android:background="#9746bab2"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/student_attendance_list_roll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:text="Roll"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#df7073" />
+
+        <TextView
+            android:id="@+id/student_attendance_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:text="Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#df7073"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <ListView
+            android:id="@+id/student_attendance_list_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorPrimaryDark"
+            android:dividerHeight="5dp"
+            tools:listitem="@layout/student_attendance_list_sample"
+            android:layout_weight="4">
+
+
+        </ListView>
+
+        <Button
+            android:id="@+id/save_attendance_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@color/colorLightBlue"
+            android:text="  Save Attendance Sheet  "
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeAttendanceActivity"
+    android:background="@drawable/galaxy_background"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Enter a class name"
+        android:visibility="gone">
+
+
+    </SearchView>
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Running classes"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="#002cdc"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/admission_list_sample_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Class Name"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/view_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#143961"
+        android:dividerHeight="5dp"
+        tools:listitem="@layout/admission_list_sample">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/note_no_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_class_running"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:textColor="#f4f4f4"/>
+
+</LinearLayout>

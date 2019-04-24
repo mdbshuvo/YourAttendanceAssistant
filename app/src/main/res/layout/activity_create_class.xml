@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateClassActivity"
+    android:background="@drawable/galaxy_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Classs Name :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#f4f3f3"/>
+
+            <EditText
+                android:id="@+id/new_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColorHint="#f4f3f3"
+                android:hint="Enter the new class name"
+                android:inputType="text"
+                android:textColor="#f4f3f3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Description (optional) :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#f4f3f3" />
+
+            <EditText
+                android:id="@+id/new_class_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Enter the Description"
+                android:inputType="text"
+                style="@style/Base.V7.Widget.AppCompat.EditText"
+                android:textColor="#f4f3f3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Enter the routine :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#f4f3f3"
+                android:textColorHint="#f4f3f3" />
+
+            <ListView
+                android:id="@+id/create_class_routine_listview"
+                android:layout_width="match_parent"
+                android:layout_height="450dp">
+
+
+
+            </ListView>
+
+            <Button
+                android:id="@+id/class_create_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="75dp"
+                android:textStyle="bold"
+                android:background="#01bca6"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

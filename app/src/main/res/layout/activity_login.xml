@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy_background"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR ATTENDANCE ASSISTANT"
+                android:textSize="40dp"
+                android:background="#3e73c1"
+                android:fadingEdge="horizontal"
+                android:gravity="center"
+                android:textColor="#1543ae"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Email : "
+                    android:textSize="20dp"
+                    android:textColor="#f5f4f4"/>
+
+                <EditText
+                    android:id="@+id/edit_text_email"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:textColor="#f5f4f4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Password : "
+                    android:textSize="20dp"
+                    android:textColor="#f5f4f4" />
+
+                <EditText
+                    android:id="@+id/edit_text_password"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    android:textColor="#f5f4f4" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_login"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"
+                android:background="#55c659"
+                android:text="LOG IN" />
+
+            <TextView
+                android:id="@+id/go_to_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="sign up for a new account"
+                android:textColor="#f7f7f7"
+                android:textStyle="bold"
+                android:clickable="true"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

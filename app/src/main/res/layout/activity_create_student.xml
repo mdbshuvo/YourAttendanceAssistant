@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateStudentActivity"
+    android:orientation="vertical"
+    android:background="@drawable/galaxy_background"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Add a Student  "
+        android:textSize="35dp"
+        android:textColor="#001fe9"
+        android:textStyle="italic|bold"
+        android:background="@color/colorAccent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roll No. :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:textColor="#f1f1f1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:textColor="#f1f1f1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/roll_box"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:textColor="#f1f1f1"/>
+
+            <EditText
+                android:id="@+id/name_box"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="#f1f1f1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Choose a class :   "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:textColor="#f1f1f1"/>
+
+        <Spinner
+            android:id="@+id/class_name_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:popupBackground="#da3b679c">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_student_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Add Student  "
+        android:layout_margin="30dp"
+        style="@style/Widget.AppCompat.Button"
+        android:textStyle="bold"
+        android:background="#55c659"/>
+
+</LinearLayout>

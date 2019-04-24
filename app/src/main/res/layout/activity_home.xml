@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/galaxy_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="#f7f7f7"
+            android:layout_marginEnd="5dp" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR ATTENDANCE ASSISTANT"
+        android:textSize="40dp"
+        android:background="#3e73c1"
+        android:fadingEdge="horizontal"
+        android:gravity="center"
+        android:textColor="#1543ae"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="60dp"
+        android:horizontalSpacing="20dp"
+        tools:listitem="@layout/home_grid_view_sample">
+
+
+    </GridView>
+
+</LinearLayout>

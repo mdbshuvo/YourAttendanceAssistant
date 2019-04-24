@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceSheetActivity"
+    android:orientation="vertical"
+    android:background="@drawable/galaxy_background">
+
+    <TextView
+        android:id="@+id/attendance_sheet_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="class name"
+        android:textSize="35dp"
+        android:textColor="#001fe9"
+        android:textStyle="italic|bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/class_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : "
+        android:textColor="#fcfcfc"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Roll"
+            android:textColor="#fcfcfc"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Name"
+            android:textColor="#fcfcfc"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Status"
+            android:textColor="#fcfcfc"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/class_routine_listview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:dividerHeight="5dp">
+
+
+    </ListView>
+
+</LinearLayout>

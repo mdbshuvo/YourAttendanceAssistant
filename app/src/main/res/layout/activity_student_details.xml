@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentDetailsActivity"
+    android:background="@drawable/galaxy_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Student Information"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:background="#22cbff"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Information"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="demo name"
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll : "
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/roll_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="demo roll"
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class : "
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+            <TextView
+                android:id="@+id/class_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="demo class"
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admitted : "
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+            <TextView
+                android:id="@+id/admitted_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="demo admitted"
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Academic performance"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance : "
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+            <TextView
+                android:id="@+id/attendance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="demo attendance %"
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/graph" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

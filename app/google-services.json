@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "338783619222",
+    "firebase_url": "https://yourattendanceassistant.firebaseio.com",
+    "project_id": "yourattendanceassistant",
+    "storage_bucket": "yourattendanceassistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338783619222:android:7bce5b199fcf53a6",
+        "android_client_info": {
+          "package_name": "com.courseproject_2200.badiuzzaman.yourattendanceassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338783619222-5jv35tnnkqrfl49s0pvsdc4ubp6d54a2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.courseproject_2200.badiuzzaman.yourattendanceassistant",
+            "certificate_hash": "2c45ab71d4d9bd7e0bfad3689e8ee4988e200de4"
+          }
+        },
+        {
+          "client_id": "338783619222-3c3bi6g31dfhtt2liji1e43sts25e03a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4CrMWdurrvTbgQiXoqs_aDmOgSqQtMMs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338783619222-3c3bi6g31dfhtt2liji1e43sts25e03a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

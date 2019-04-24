@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClassDetailsActivity"
+    android:background="@drawable/galaxy_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Class Information"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:background="#22cbff"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class Name : "
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/class_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="demo name"
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of students : "
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/class_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="demo number"
+                android:textSize="25sp"
+                android:textColor="#e9e9e9"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class Routine"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Day"
+                android:textColor="#fcfcfc"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Start"
+                android:textColor="#fcfcfc"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="End"
+                android:textColor="#fcfcfc"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/class_routine_listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:dividerHeight="5dp">
+
+
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Students"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/edit_students_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Students"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@color/colorLightBlue"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/class_nothing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_student"
+            android:visibility="gone"
+            android:textColor="#f7f6f6"/>
+
+        <ListView
+            android:id="@+id/class_student_listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:dividerHeight="5dp"
+            android:layout_margin="10dp">
+
+
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attendance Sheets"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/class_attendance_sheet_listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:dividerHeight="5dp"
+            android:layout_margin="10dp">
+
+
+        </ListView>
+
+    </LinearLayout>
+
+</ScrollView>

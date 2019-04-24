@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/create_class_day"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="  Friday"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/class_start_time_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start: "
+        android:background="@color/colorLightBlue"
+        android:layout_margin="5dp"
+        style="@style/Widget.AppCompat.Button"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/class_end_time_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end: "
+        android:background="@color/colorLightBlue"
+        android:layout_margin="5dp"
+        style="@style/Widget.AppCompat.Button"
+        android:enabled="false"/>
+
+</LinearLayout>
